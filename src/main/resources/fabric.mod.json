@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "chainarmouradder",
+  "version": "${version}",
+  "name": "Chainarmouradder",
+  "description": "Allows chain in 1.16 to be used to make chain armour",
+  "authors": [
+    "HiItsDevin_"
+  ],
+  "contact": {
+    "website": "https://hiitsdevin.dev",
+    "repo": "https://github.com/devOS-Sanity-Edition/chainarmouradder"
+  },
+  "license": "MIT",
+  "icon": "assets/chainarmouradder/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "dev.hiitsdevin.chainarmouradder.client.ChainarmouradderClient"
+    ],
+    "main": [
+      "dev.hiitsdevin.chainarmouradder.Chainarmouradder"
+    ]
+  },
+  "mixins": [
+    "chainarmouradder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
